@@ -1,0 +1,51 @@
+<!-- Question-2 How to Apply CSS Using JQuery, How to Add Class and Remove Class in JQuery, JQuery Animation? -->
+
+<!-- Ans.  
+    jQuery has several methods for CSS manipulation. 
+    We will look at the following methods: 
+    1) addClass():Adds one or more classes to the selected elements
+    2) removeClass():Removes one or more classes from the selected elements
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>addClass using jquery</title>
+    <!-- online jquery cdn File  -->
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <!-- How to start jQuery -->
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("h1,h2,p").addClass("blue");
+                $("div").addClass("important");
+            });
+        });
+    </script>
+    <!-- Internal Css -->
+    <style>
+        .important {
+            font-weight: bold;
+            font-size: xx-large;
+            }
+
+            .blue {
+            color: blue;
+            }
+    </style>
+</head>
+<body>
+    <!-- Heading -->
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <!-- Paragraph -->
+    <p>This is a paragraph.</p>
+    <p>This is another paragraph.</p>
+    <!-- Div and button -->
+    <div>This is some important text!</div><br>
+    <button>Add classes to elements</button>
+
+</body>
+</html>
